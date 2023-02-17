@@ -17,6 +17,12 @@
 .box-border {
     border: 3px solid rgba(193, 193, 193, .5);
     border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.head-round {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /* navigation */
@@ -30,14 +36,12 @@
 .nav-title {
     color: white;
     font-weight:light;
-    margin: 0px;
+    margin-right: 20px;
 }
 .nav-links {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    /* position: sticky;
-    left: 235px; */
 }
 .nav-items {
     margin: 0px 15px;
@@ -260,6 +264,8 @@
     flex-direction: column;
     border-top: none;
     padding: 30px 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .people-list {
     flex: 1;
