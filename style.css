@@ -60,6 +60,7 @@
     height: 30px;
     width: 75px;
     display: flex;
+    border-radius: 3px;
     /* position: sticky;
     right: 235px; */
 }
