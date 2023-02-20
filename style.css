@@ -53,7 +53,7 @@
     font-weight: bold;
 }
 .btn {
-    background-color:#24ACCC;
+    background-color: rgb(23, 162, 184);
     color: white;
     font-weight: bold;
     padding: 5px;
@@ -104,7 +104,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 80%;
-    /* scale: .9; */
     padding: 5px 30px;
 }
 .profile-content * {
@@ -181,12 +180,12 @@
 }
 
 /* requests block */
-.req-header {
+.sec-header {
     background-color: darkslategrey;
     height: 65px;
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 .rqt-num {
     min-width: 20px;
@@ -232,13 +231,6 @@
 }
 
 /* connections block */
-.connections-header {
-    background-color: darkslategrey;
-    height: 65px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-}
 .connections-body {
     display: flex;
     flex-direction: column;
