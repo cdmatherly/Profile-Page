@@ -67,26 +67,21 @@
 
 /* main body */
 .main {
-    /* background-color: chocolate; */
     display: flex;
     height: 1000px;
     margin: 0 auto;
-    /* padding: 25px 200px; */
     padding: 25px 10%;
 }
 .col1 {
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     flex: 3;
-    /* margin: 10px; */
     padding: 25px;
     gap: 50px;
 }
 
 /* profile block */
 .profile-block {
-    /* flex: 2; */
     display: flex;
     flex-direction: column;
 }
@@ -108,16 +103,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* position: absolute; */
     height: 80%;
-    /* width: 80%; */
-    /* bottom: 0; */
-    /* commented out margin after scaling down */
-    /* margin: 0 0 5px 15px; */
-    scale: .9;
+    /* scale: .9; */
+    padding: 5px 30px;
 }
 .profile-content * {
-    margin: 2px;
+    margin: 3px;
 }
 #avatar {
     position: relative;
@@ -130,7 +121,7 @@
     box-shadow: 0px 0px 5px;
 }
 #name {
-    font-size: 1.7em;
+    font-size: 1.8em;
 }
 .location {
     width: 75px;
@@ -143,13 +134,14 @@
 }
 #city {
     font-size: 1.1em;
+    font-weight: 600;
 }
 .bio {
     flex-wrap: wrap;
-    font-size: 0.95em;
 }
 .settings {
     display: flex;
+    font-size: .9em;
 }
 #gear-icon {
     height: 15px;
@@ -165,8 +157,6 @@
     margin-left: 25px;
 }
 .ed-body {
-    /* background-color: whitesmoke; */
-    /* height: 100%; */
     padding: 15px 20px;
 }
 .ed-list {
@@ -183,11 +173,9 @@
     color: grey;
 }
 .col2 {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     flex: 2;
-    /* margin: 10px; */
     padding: 25px;
     gap: 50px;
 }
@@ -210,17 +198,15 @@
 }
 .sec-title {
     color: whitesmoke;
+    font-weight: 500;
 }
 .req-body {
-    /* background-color: pink; */
-    /* height: 80%; */
     display: flex;
     flex-direction: column;
     padding: 30px 10px 30px 25px;
     gap: 25px;
 }
 .person {
-    /* background-color: aquamarine; */
     flex: 1;
     margin: 5px;
     display: flex;
@@ -240,19 +226,12 @@
 
 }
 .rqt-name {
-    /* background-color: blue; */
     display: flex;
     justify-content: space-between;
     gap: 10px
 }
 
 /* connections block */
-.connections {
-    /* height: 500px; */
-    width: 100%;
-    /* background-color: rebeccapurple; */
-    /* margin: 10px 0; */
-}
 .connections-header {
     background-color: darkslategrey;
     height: 65px;
