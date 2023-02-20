@@ -71,7 +71,8 @@
     display: flex;
     height: 1000px;
     margin: 0 auto;
-    padding: 25px 200px;
+    /* padding: 25px 200px; */
+    padding: 25px 10%;
 }
 .col1 {
     /* background-color: blue; */
@@ -82,6 +83,8 @@
     padding: 25px;
     gap: 50px;
 }
+
+/* profile block */
 .profile-block {
     /* flex: 2; */
     display: flex;
@@ -151,10 +154,8 @@
 #gear-icon {
     height: 15px;
 }
-.education {
-    /* background-color: pink; */
-    /* height: 100%; */
-}
+
+/* education block */
 .ed-header {
     background-color: darkslategrey;
     height: 65px;
@@ -190,11 +191,8 @@
     padding: 25px;
     gap: 50px;
 }
-.requests {
-    /* background-color: aqua; */
-    /* height: 250px; */
-    /* margin: 10px 0; */
-}
+
+/* requests block */
 .req-header {
     background-color: darkslategrey;
     height: 65px;
@@ -247,6 +245,8 @@
     justify-content: space-between;
     gap: 10px
 }
+
+/* connections block */
 .connections {
     /* height: 500px; */
     width: 100%;
