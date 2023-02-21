@@ -37,7 +37,7 @@
                         </div>
                         <div class="settings vertical-center">
                             <img id="gear-icon" src="./icons/gear.png" alt="gear icon">
-                            <a href="#">edit profile</a>
+                            <a href="#" onclick="updateName()">edit profile</a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                         <li class="sub-head">Coding Dojo - Full Stack Bootcamp</li>
                         <li class="date">Dec 2019 - Mar 2020</li>
                         <li class="desc">Triple black belt in Python, MERN, and C#</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laborum, quaerat dolorum totam omnis non! Ex, modi sint laborum consectetur, accusamus beatae non ab iure pariatur illum quod? Distinctio, dolorum?
+                        <!-- <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laborum, quaerat dolorum totam omnis non! Ex, modi sint laborum consectetur, accusamus beatae non ab iure pariatur illum quod? Distinctio, dolorum?
                         Quo, in commodi eum fugit animi, necessitatibus, suscipit illum consequuntur sunt voluptatibus expedita quibusdam sequi! Ipsa tempore inventore rem dolor cupiditate ipsum doloribus. Earum accusantium accusamus nam totam adipisci eaque!
                         Dicta quasi accusamus, possimus repudiandae nam expedita ipsa consectetur porro, rem inventore alias enim iste asperiores itaque cupiditate hic delectus suscipit pariatur distinctio quisquam accusantium quod quis laborum. Qui, excepturi.
                         Laborum, ullam? Assumenda voluptate, iste porro saepe labore architecto beatae. Odio aspernatur voluptatem accusamus reiciendis consectetur magni dignissimos ipsum! Perspiciatis autem obcaecati dolores labore voluptatem sequi officia aliquid consequatur fuga.
@@ -60,7 +60,7 @@
                         Nemo excepturi magni iste dignissimos sapiente minima adipisci veritatis quidem laboriosam tempore assumenda placeat soluta recusandae laborum quam velit aliquam veniam voluptatum qui, suscipit ducimus mollitia. Quod a veritatis nulla?
                         Voluptatum atque aperiam ea autem error quasi eveniet, amet doloremque quos velit accusantium eos excepturi fugiat distinctio iusto consequuntur esse vel sapiente delectus optio magni? Laboriosam fugit distinctio hic nam?
                         Eum sint facilis tempore blanditiis voluptatibus, cumque necessitatibus modi molestias odit reiciendis esse accusantium corporis impedit inventore dolores in qui eaque illum. Veniam, placeat voluptas doloribus dolorem quod earum at?
-                        Nobis dicta quasi animi quaerat nam libero natus aliquam enim quia vel consequuntur sed eaque minima tempore doloremque expedita inventore autem ratione, assumenda facere, possimus iure reprehenderit voluptas. Eaque, consequatur.</li>
+                        Nobis dicta quasi animi quaerat nam libero natus aliquam enim quia vel consequuntur sed eaque minima tempore doloremque expedita inventore autem ratione, assumenda facere, possimus iure reprehenderit voluptas. Eaque, consequatur.</li> -->
                     </ul>
                 </div>
             </div>
@@ -68,7 +68,7 @@
         <div class="col2">
             <div class="requests">
                 <div class="sec-header vertical-center head-round">
-                    <p class="rqt-num">2</p>
+                    <p class="rqt-indicator" id="rqtNum">2</p>
                     <h2 class="sec-title">Connection Requests</h2>
                 </div>
                 <div class="req-body box-border">
@@ -77,9 +77,9 @@
                             <img class="rqt-icon" src="./icons/todd-s.jpg" alt="rqt icon">
                             <p class="profile-name">Todd E</p>
                         </div>
-                        <div class="accept-btn">
-                            <a href="#"><img class="rqt-icon" src="./icons/accept-circle.png" alt="accept icon"></a>
-                            <a href="#"><img class="rqt-icon" src="./icons/close-circle.png" alt="reject icon"></a>
+                        <div class="btn-container">
+                            <button type="button" class="accept-btn" onclick="removeRqt(this)"><img class="rqt-icon" src="./icons/accept-circle.png" alt="accept icon"></button>
+                            <button type="button" class="accept-btn" onclick="removeRqt(this)"><img class="rqt-icon" src="./icons/close-circle.png" alt="reject icon"></button>
                         </div>
                     </div>
                     <div class="person vertical-center" id="phil">
@@ -87,16 +87,16 @@
                             <img id="phil-icon" class="rqt-icon" src="./icons/phil-s.jpg" alt="rqt icon">
                             <p class="profile-name">Phil K</p>
                         </div>
-                        <div class="accept-btn">
-                            <a href="#"><img class="rqt-icon" src="./icons/accept-circle.png" alt="accept icon"></a>
-                            <a href="#"><img class="rqt-icon" src="./icons/close-circle.png" alt="reject icon"></a>
+                        <div class="btn-container">
+                            <button type="button" class="accept-btn" onclick="removeRqt(this)"><img class="rqt-icon" src="./icons/accept-circle.png" alt="accept icon"></button>
+                            <button type="button" class="accept-btn" onclick="removeRqt(this)"><img class="rqt-icon" src="./icons/close-circle.png" alt="reject icon"></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="connections">
                 <div class="sec-header vertical-center head-round">
-                    <p class="rqt-num">500+</p>
+                    <p class="rqt-indicator" id="conNum">418</p>
                     <h2 class="sec-title">Your Connections</h2>
                 </div>
                 <div class="connections-body box-border">
@@ -123,5 +123,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
